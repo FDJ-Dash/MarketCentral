@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Login activity-->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="text_button_login">Login</string>
+    <string name="dont_have_account">Dont have an account?  Create one here!</string>
+    <string name="create_account">Create Account</string>
+    <!--Create Account activity-->
+    <string name="toolbar_tittle_createaccount">Create Account</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_user">User</string>
+    <string name="hint_confirn_password">Confirm Password</string>
+    <string name="text_button_createaccount">Join us</string>
+</resources>
