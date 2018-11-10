@@ -77,7 +77,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.CreateAccountActivity"></activity>
+        <activity android:name=".view.CreateAccountActivity"
+            android:parentActivityName=".MainActivityLogin">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityLogin" />
+        </activity>
     </application>
 
 </manifest>

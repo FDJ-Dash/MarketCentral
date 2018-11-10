@@ -1,7 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">MarketCentral</string>
-    <string name="freetimesoftware" translatable="false">Free Time Software</string>
-    <string name="MarketCentral" translatable="false">Market Central</string>
     <!--Login activity-->
     <string name="hint_username">Nombre de Usuario</string>
     <string name="hint_password">Contraseña</string>
@@ -16,5 +14,3 @@
     <string name="hint_confirn_password">Confirmar Contraseña</string>
     <string name="text_button_createaccount">Unete</string>
 </resources>
-
-

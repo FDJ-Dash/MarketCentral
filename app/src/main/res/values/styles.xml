@@ -14,8 +14,42 @@
         <item name="colorAccent">@color/accent</item>
 
         <!--<item name="cardViewStyle">@style/CardView</item>-->
+    </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/primary_dark</item>
+        <item name="colorControlHighlight">@color/primary</item>
+        <!--<item name="android:textColorLink">#006699</item>-->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RaisedButtonLightGrey" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/primary_light_gray</item>
+        <item name="colorControlHighlight">@color/primary_dark_gray</item>
+        <!--<item name="android:textColorLink">#006699</item>-->
+        <item name="android:textColor">@color/primary_text_green</item>
+    </style>
+
+    <style name="EditTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/editTextColorWhite</item>
+        <item name="android:textSize">@dimen/editText_textsize_login</item>
+        <item name="android:textColorPrimary">@color/editTextColorWhite</item>
+        <item name="colorAccent">@color/editTextColorWhite</item>
+        <item name="colorControlNormal">@color/editTextColorWhite</item>
+        <item name="colorControlActivated">@color/editTextColorWhite</item>
+    </style>
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/editTextColorBlack</item>
+        <item name="android:textSize">@dimen/editText_textsize_login</item>
+        <item name="android:textColorPrimary">@color/editTextColorBlack</item>
+        <item name="colorAccent">@color/editTextColorBlack</item>
+        <item name="colorControlNormal">@color/editTextColorBlack</item>
+        <item name="colorControlActivated">@color/editTextColorBlack</item>
     </style>
 
 </resources>
