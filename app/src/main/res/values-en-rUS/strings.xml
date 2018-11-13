@@ -6,6 +6,12 @@
     <string name="text_button_login">Login</string>
     <string name="dont_have_account">Dont have an account?  Create one here!</string>
     <string name="create_account">Create Account</string>
+    <string name="lost_password">Lost Password?</string>
+    <!--Login Activity Validations-->
+    <string name="Empty_user_field">User field is Empty</string>
+    <string name="Empty_password_field">Password field is empty</string>
+    <string name="Auth_success">Authentication Successful</string>
+    <string name="Auth_not_success">Authentication Not Successful</string>
     <!--Create Account activity-->
     <string name="toolbar_tittle_createaccount">Create Account</string>
     <string name="hint_email">Email</string>
@@ -13,4 +19,26 @@
     <string name="hint_user">User</string>
     <string name="hint_confirn_password">Confirm Password</string>
     <string name="text_button_createaccount">Join us</string>
+    <!--Create Account Activity Validations-->
+    <string name="conf_password">Confirmation password do not match</string>
+    <string name="email_verif_sent_to">Email verification sent to</string>
+    <string name="email_verification_not_sent">Failed to send verification email</string>
+    <string name="account_not_created">An error happened while creating account</string>
+    <string name="Empty_email_field">Email Field is empty</string>
+    <string name="email_not_verified">Please verify your email link sent</string>
+    <string name="invldEmailOrWeakPsw">Invalid or Existing Email or Weak Password</string>
+    <!--Home activity -->
+    <string name="userimage">User Image</string>
+    <string name="logout_button">Logout</string>
+    <string name="FIR_SignOut">Firebase Sign Out Successful</string>
+    <!--Reset Password Activity-->
+    <string name="toolbar_tittle_forgotpassword">Forgot Password</string>
+    <string name="psw_reset_email_sent">Password Reset Email Sent</string>
+    <string name="reset_password">Password Reset Email</string>
+    <string name="InvldEmail">Invalid or Not Found Email</string>
+    <!--Change Password-->
+    <!--<string name="change_password">Change Password</string>-->
+    <!--<string name="hint_new_password">New Password</string>-->
+    <!--<string name="hint_confirm_new_password">Confirm New Password</string>-->
+    <!--<string name="new_password_updated">New Password updated</string>-->
 </resources>

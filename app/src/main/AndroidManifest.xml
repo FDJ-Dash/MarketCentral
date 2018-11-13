@@ -6,8 +6,6 @@
     The following XML snippet shows how you might specify an intent filter in your manifest for deep linking.
     The URIs “example://gizmos” and “http://www.example.com/gizmos” both resolve to this activity.
     -->
-
-
     <!-- <activity -->
     <!-- android:name="com.example.android.GizmosActivity" -->
     <!-- android:label="@string/title_gizmos" > -->
@@ -30,8 +28,6 @@
     <!-- android:host="gizmos" /> -->
     <!-- </intent-filter> -->
     <!-- </activity> -->
-
-
     <!--
     Notice that the two intent filters only differ by the <data> element.
     Although it's possible to include multiple <data> elements in the same filter,
@@ -40,29 +36,20 @@
     in the same intent filter are actually merged together to account for all variations of their
     combined attributes. For example, consider the following:
     -->
-
-
     <!-- <intent-filter> -->
     <!-- ... -->
     <!-- <data android:scheme="https" android:host="www.example.com" /> -->
     <!-- <data android:scheme="app" android:host="open.my.app" /> -->
     <!-- </intent-filter> -->
-
-
     <!--
     It might seem as though this supports only https://www.example.com and app://open.my.app.
     However, it actually supports those two, plus these: app://www.example.com and https://open.my.app.
     -->
-
-
     <!--
     Once you've added intent filters with URIs for activity content to your app manifest, Android
     is able to route any Intent that has matching URIs to your app at runtime.
     -->
-
-
     <!-- To learn more about defining intent filters, see Allow Other Apps to Start Your Activity. -->
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -77,7 +64,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.CreateAccountActivity"
+        <activity
+            android:name=".view.CreateAccountActivity"
+            android:parentActivityName=".MainActivityLogin">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityLogin" />
+        </activity>
+        <activity
+            android:name=".view.HomeActivity"
+            android:parentActivityName=".MainActivityLogin">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityLogin" />
+        </activity>
+        <activity android:name=".view.ResetPasswordActivity"
             android:parentActivityName=".MainActivityLogin">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->

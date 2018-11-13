@@ -1,11 +1,17 @@
+# Android Studio
 *.iml
-.gradle
-/local.properties
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
 /.idea/caches/build_file_checksums.ser
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
+.gradle
+# Local configuration file (sdk path, etc)
+/local.properties
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+
+# Firebase - Not including it since its a public repo
+app/google-services.json
