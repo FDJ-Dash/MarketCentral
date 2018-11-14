@@ -11,9 +11,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+//import android.widget.TextView;
 import android.widget.Toast;
 
+import com.freetime_software.marketcentral.view.EmailChangeActivity;
 import com.freetime_software.marketcentral.view.ResetPasswordActivity;
 import com.freetime_software.marketcentral.view.CreateAccountActivity;
 import com.freetime_software.marketcentral.view.HomeActivity;
@@ -33,9 +34,8 @@ public class MainActivityLogin extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authStateListener;
 
     private Button btnLogin; //btnSignIn
-    private TextView edtLostPassword;
 
-    private TextInputEditText tedtUsername; //tedtEmail
+    private TextInputEditText tedtEmail;
     private TextInputEditText tedtPassword;
 
     @Override
@@ -45,8 +45,7 @@ public class MainActivityLogin extends AppCompatActivity {
 
         // Firebase SignIn
         btnLogin          = findViewById(R.id.btnLogin); //btnSignIn
-        edtLostPassword   = findViewById(R.id.edtLostPassword);
-        tedtUsername      = findViewById(R.id.tedtUsername); //tedtEmail
+        tedtEmail      = findViewById(R.id.tedtEmail);
         tedtPassword      = findViewById(R.id.tedtPassword);
 
         initialize();
@@ -54,13 +53,13 @@ public class MainActivityLogin extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((tedtUsername.getText() != null) && (tedtPassword.getText() != null)) {
-                    if (tedtUsername.getText().toString().equals("")) {
+                if ((tedtEmail.getText() != null) && (tedtPassword.getText() != null)) {
+                    if (tedtEmail.getText().toString().equals("")) {
                         Toast.makeText(MainActivityLogin.this, R.string.Empty_user_field, Toast.LENGTH_SHORT).show();
                     } else if (tedtPassword.getText().toString().equals("")) {
                         Toast.makeText(MainActivityLogin.this, R.string.Empty_password_field, Toast.LENGTH_SHORT).show();
                     } else {
-                        login(tedtUsername.getText().toString(), tedtPassword.getText().toString());
+                        login(tedtEmail.getText().toString(), tedtPassword.getText().toString());
                     }
                 }
             }
@@ -108,6 +107,7 @@ public class MainActivityLogin extends AppCompatActivity {
                         Toast.makeText(MainActivityLogin.this, R.string.email_not_verified, Toast.LENGTH_SHORT).show();
                     }
                 } else {
+                    // invalid password
                     Toast.makeText(MainActivityLogin.this, R.string.Auth_not_success, Toast.LENGTH_SHORT).show();
                 }
             }
@@ -127,6 +127,7 @@ public class MainActivityLogin extends AppCompatActivity {
     }
 
     public void goCreateAccount(View view) {
+        // Also add corresponding changes on manifest file
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
@@ -137,5 +138,11 @@ public class MainActivityLogin extends AppCompatActivity {
         startActivity(intent);
         // Do not Destroy this activity after switching. (up button needs it)
         // finish();
+    }
+
+    public void goUpdateEmail(View view) {
+        // Also add corresponding changes on manifest file
+        Intent intent = new Intent(this, EmailChangeActivity.class);
+        startActivity(intent);
     }
 }

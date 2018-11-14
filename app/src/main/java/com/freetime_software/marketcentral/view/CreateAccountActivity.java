@@ -71,7 +71,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     }
 
     @SuppressLint("RestrictedApi")
-    public void showToolbar(String tittle, boolean upButton) {
+    private void showToolbar(String tittle, @SuppressWarnings("SameParameterValue") boolean upButton) {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
