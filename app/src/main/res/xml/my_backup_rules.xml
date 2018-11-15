@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!--Sample-->
+    <!--The following sample backs up all shared preferences except device.xml:-->
+    <!--<include domain="sharedpref" path="."/>-->
+    <!--<exclude domain="sharedpref" path="device.xml"/>-->
+</full-backup-content>

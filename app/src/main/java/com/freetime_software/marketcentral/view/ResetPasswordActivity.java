@@ -34,7 +34,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
         showToolbar(getResources().getString(R.string.toolbar_tittle_forgotpassword),true);
 
         tedtEmail           = findViewById(R.id.emailRP); // username
-        btnResetPswEmail        = findViewById(R.id.btnResetPswRP);
+        btnResetPswEmail    = findViewById(R.id.btnResetPswRP);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -69,7 +69,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
     }
 
     @SuppressLint("RestrictedApi")
-    public void showToolbar(String tittle, boolean upButton) {
+    private void showToolbar(String tittle, @SuppressWarnings("SameParameterValue") boolean upButton) {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {

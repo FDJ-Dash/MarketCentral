@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Login activity-->
-    <string name="hint_username">Username</string>
     <string name="hint_password">Password</string>
     <string name="text_button_login">Login</string>
     <string name="dont_have_account">Dont have an account?  Create one here!</string>
     <string name="create_account">Create Account</string>
     <string name="lost_password">Lost Password?</string>
+    <string name="edtUpdateEmail">Update Email?</string>
     <!--Login Activity Validations-->
     <string name="Empty_user_field">User field is Empty</string>
     <string name="Empty_password_field">Password field is empty</string>
@@ -23,7 +23,6 @@
     <string name="conf_password">Confirmation password do not match</string>
     <string name="email_verif_sent_to">Email verification sent to</string>
     <string name="email_verification_not_sent">Failed to send verification email</string>
-    <string name="account_not_created">An error happened while creating account</string>
     <string name="Empty_email_field">Email Field is empty</string>
     <string name="email_not_verified">Please verify your email link sent</string>
     <string name="invldEmailOrWeakPsw">Invalid or Existing Email or Weak Password</string>
@@ -34,8 +33,16 @@
     <!--Reset Password Activity-->
     <string name="toolbar_tittle_forgotpassword">Forgot Password</string>
     <string name="psw_reset_email_sent">Password Reset Email Sent</string>
-    <string name="reset_password">Password Reset Email</string>
+    <string name="reset_password">Password Reset</string>
     <string name="InvldEmail">Invalid or Not Found Email</string>
+    <!--Email Change Activity-->
+    <string name="hint_current_email">Current Email</string>
+    <string name="hint_new_email">New Email</string>
+    <string name="updateEmail">Update Email</string>
+    <string name="toolbar_tittle_updatemail">Update Mail</string>
+    <string name="logginRequest">Loggin with current email to continue</string>
+    <string name="quickLogin">Quick Login</string>
+    <string name="quickLogout">Quick Logout</string>
     <!--Change Password-->
     <!--<string name="change_password">Change Password</string>-->
     <!--<string name="hint_new_password">New Password</string>-->
