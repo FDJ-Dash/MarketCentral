@@ -193,7 +193,7 @@ public class EmailChangeActivity extends AppCompatActivity {
 
     private void quickLogout() {
         firebaseAuth.signOut();
-        Toast.makeText(EmailChangeActivity.this, R.string.FIR_SignOut, Toast.LENGTH_SHORT).show();
+        Toast.makeText(EmailChangeActivity.this, R.string.SignOut, Toast.LENGTH_SHORT).show();
     }
 
     @Override

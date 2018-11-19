@@ -8,10 +8,15 @@
     <string name="lost_password">¿Contraseña perdida?</string>
     <string name="edtUpdateEmail">¿Actualizar Email?</string>
     <!--Login Activity Validations-->
-    <string name="Empty_user_field">Campo de usuario vacio</string>
+    <string name="Empty_email_field">Campo Correo Vacio</string>
     <string name="Empty_password_field">Campo contraseña vacio</string>
     <string name="Auth_success">Autenticación exitosa</string>
     <string name="Auth_not_success">Autenticación no exitosa</string>
+    <string name="googleAuthSuccess">Autenticacion de Google Exitosa</string>
+    <string name="googleAuthNotSuccess">Autenticacion de Google No Exitosa</string>
+    <string name="googleSignInNotSuccess">Sign In de Google No Exitoso</string>
+    <string name="facebookAuthSuccess">Autenticacion de Facebook Exitosa</string>
+    <string name="facebookAuthNotSuccess">Autenticacion de Facebook No Exitosa</string>
     <!--Create Account activity-->
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
     <string name="hint_email">Correo</string>
@@ -23,13 +28,12 @@
     <string name="conf_password">La confirmación de contraseña no concuerda</string>
     <string name="email_verif_sent_to">Email de verificación enviado a</string>
     <string name="email_verification_not_sent">Fallo al enviar email de verificacion</string>
-    <string name="Empty_email_field">Campo email vacio</string>
     <string name="email_not_verified">Por favor verifica el link de email enviado</string>
     <string name="invldEmailOrWeakPsw">Email Inválido o Existente o Contraseña Débil</string>
     <!--Home activity -->
     <string name="userimage">Imagen de Usuario</string>
     <string name="logout_button">Logout</string>
-    <string name="FIR_SignOut">Sign out de Firebase exitoso</string>
+    <string name="SignOut">Sign Out Exitoso</string>
     <!--Reset Password Activity-->
     <string name="toolbar_tittle_forgotpassword">Contraseña Olvidada</string>
     <string name="psw_reset_email_sent">Email de Reset de Contraseña enviado</string>
