@@ -37,7 +37,7 @@ public class EmailChangeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_change);
 
-        showToolbar(getResources().getString(R.string.toolbar_tittle_updatemail),true);
+        showToolbar(getResources().getString(R.string.toolbar_title_updatemail),true);
 
         tedtEmail = findViewById(R.id.emailEC2);
         tedtPassword = findViewById(R.id.passwordEC3);

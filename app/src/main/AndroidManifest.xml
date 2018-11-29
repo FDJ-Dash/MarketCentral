@@ -51,7 +51,7 @@
     -->
     <!-- To learn more about defining intent filters, see Allow Other Apps to Start Your Activity. -->
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -63,26 +63,27 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id"/>
+            android:value="@string/facebook_app_id" />
+
         <activity
             android:name="com.facebook.FacebookActivity"
-            android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
             <intent-filter>
-                <action
-                    android:name="android.intent.action.VIEW" />
-                <category
-                    android:name="android.intent.category.DEFAULT" />
-                <category
-                    android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivityLogin">
+        <activity
+            android:name=".MainActivityLogin"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -99,15 +100,6 @@
                 android:value=".MainActivityLogin" />
         </activity>
         <activity
-            android:name=".view.HomeActivity"
-            android:parentActivityName=".MainActivityLogin">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivityLogin" />
-        </activity>
-        <activity
             android:name=".view.ResetPasswordActivity"
             android:parentActivityName=".MainActivityLogin">
 
@@ -116,7 +108,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivityLogin" />
         </activity>
-        <activity android:name=".view.EmailChangeActivity"
+        <activity
+            android:name=".view.EmailChangeActivity"
+            android:parentActivityName=".MainActivityLogin">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityLogin" />
+        </activity>
+        <activity android:name=".view.FragmentContainerActivity"
             android:parentActivityName=".MainActivityLogin">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->

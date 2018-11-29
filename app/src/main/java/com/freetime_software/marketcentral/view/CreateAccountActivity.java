@@ -36,7 +36,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
-        showToolbar(getResources().getString(R.string.toolbar_tittle_createaccount),true);
+        showToolbar(getResources().getString(R.string.toolbar_title_createaccount),true);
 
         btnJoinUs   = findViewById(R.id.joinUs);
         tedtEmail    = findViewById(R.id.email);
