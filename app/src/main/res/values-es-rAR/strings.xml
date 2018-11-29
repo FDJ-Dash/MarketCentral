@@ -18,7 +18,7 @@
     <string name="facebookAuthSuccess">Autenticacion de Facebook Exitosa</string>
     <string name="facebookAuthNotSuccess">Autenticacion de Facebook No Exitosa</string>
     <!--Create Account activity-->
-    <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
+    <string name="toolbar_title_createaccount">Crear Cuenta</string>
     <string name="hint_email">Correo</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_user">Usuario</string>
@@ -30,12 +30,17 @@
     <string name="email_verification_not_sent">Fallo al enviar email de verificacion</string>
     <string name="email_not_verified">Por favor verifica el link de email enviado</string>
     <string name="invldEmailOrWeakPsw">Email Inválido o Existente o Contraseña Débil</string>
-    <!--Home activity -->
+    <!--Home - Drawer Header - Fragment Container activity -->
+    <string name="access_level">Nivel de Acceso:</string>
+    <string name="clearance_color">Color Autorización:</string>
+    <string name="user_name">Nombre de Usuario</string>
     <string name="userimage">Imagen de Usuario</string>
-    <string name="logout_button">Logout</string>
+    <string name="user_email">Email de Usuario</string>
+    <!--<string name="logout_button">Logout</string>-->
+    <string name="logout">Salir</string>
     <string name="SignOut">Sign Out Exitoso</string>
     <!--Reset Password Activity-->
-    <string name="toolbar_tittle_forgotpassword">Contraseña Olvidada</string>
+    <string name="toolbar_title_forgotpassword">Contraseña Olvidada</string>
     <string name="psw_reset_email_sent">Email de Reset de Contraseña enviado</string>
     <string name="reset_password">Reset Contraseña</string>
     <string name="InvldEmail">Email Inválido o No Encontrado</string>
@@ -43,13 +48,30 @@
     <string name="hint_current_email">Email Actual</string>
     <string name="hint_new_email">Nuevo Email</string>
     <string name="updateEmail">Actualizar Email</string>
-    <string name="toolbar_tittle_updatemail">Actualizar Mail</string>
+    <string name="toolbar_title_updatemail">Actualizar Mail</string>
     <string name="logginRequest">Loguea con el email actual para continuar</string>
     <string name="quickLogin">Logueo Rápido</string>
     <string name="quickLogout">Deslogueo Rápido</string>
-    <!--Change Password-->
-    <!--<string name="change_password">Change Password</string>-->
-    <!--<string name="hint_new_password">New Password</string>-->
-    <!--<string name="hint_confirm_new_password">Confirm New Password</string>-->
-    <!--<string name="new_password_updated">New Password updated</string>-->
+    <!--Drawer Menu - Fragment Container activity-->
+    <string name="nav_drawer_open">Open Navigation Drawer</string>
+    <string name="nav_drawer_close">Close Navigation Drawer</string>
+    <!--Home drawer-->
+    <string name="home">Inicio</string>
+    <string name="welcome">Bienvenido a</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="prices">Precios</string>
+    <!--Account drawer-->
+    <string name="account">Cuenta</string>
+    <string name="profile">Perfil</string>
+    <!--Communicate drawer-->
+    <string name="communicate">Comunicar</string>
+    <string name="message">Mensaje</string>
+    <string name="share">Compartir</string>
+    <string name="send">Enviar</string>
+    <!--About us drawer-->
+    <string name="about">Sobre Nosotros</string>
+    <string name="programmer">Programador</string>
+    <string name="designer">Diseñador</string>
+    <!--System drawer-->
+    <string name="system">Sistema</string>
 </resources>

@@ -22,9 +22,9 @@ import com.facebook.FacebookSdk;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.freetime_software.marketcentral.view.EmailChangeActivity;
+import com.freetime_software.marketcentral.view.FragmentContainerActivity;
 import com.freetime_software.marketcentral.view.ResetPasswordActivity;
 import com.freetime_software.marketcentral.view.CreateAccountActivity;
-import com.freetime_software.marketcentral.view.HomeActivity;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
@@ -63,7 +63,7 @@ public class MainActivityLogin extends AppCompatActivity implements GoogleApiCli
     // Facebook SignIn
     private CallbackManager callbackManager;
     private LoginButton btnSignInFacebook;
-    boolean isLoggedIn;
+    private boolean isLoggedIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -258,9 +258,9 @@ public class MainActivityLogin extends AppCompatActivity implements GoogleApiCli
         firebaseAuth.removeAuthStateListener(authStateListener);
     }
 
-    public void goHome() {
+    private void goHome() {
         // Also add corresponding changes on manifest file
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, FragmentContainerActivity.class);
         startActivity(intent);
         finish();
     }

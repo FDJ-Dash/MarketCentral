@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<item
+        android:id="@+id/nav_group_market"
+        android:title="@string/MarketCentral"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:title="@string/home" />
+                <item
+                    android:id="@+id/nav_statistics"
+                    android:icon="@drawable/ic_assessment_black_24dp"
+                    android:title="@string/statistics" />
+                <item
+                    android:id="@+id/nav_prices"
+                    android:icon="@drawable/ic_monetization_on_black_24dp"
+                    android:title="@string/prices" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_group_account"
+        android:title="@string/account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_account_circle_black_24dp"
+                    android:title="@string/profile" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_group_communicate"
+        android:title="@string/communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_message"
+                    android:icon="@drawable/ic_email_black_24dp"
+                    android:title="@string/message" />
+                <item
+                    android:id="@+id/nav_chat"
+                    android:icon="@drawable/ic_textsms_black_24dp"
+                    android:title="@string/chat" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    android:title="@string/share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_send_black_24dp"
+                    android:title="@string/send" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_group_system"
+        android:title="@string/system"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+    <!--Group Market Central-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_group_market"-->
+    <!--android:title="Market Central"-->
+    <!--android:icon="@drawable/ic_expand_more_green_24dp" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_home"-->
+    <!--android:icon="@drawable/ic_home_black_24dp"-->
+    <!--android:title="@string/home"-->
+    <!--android:visible="false" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_statistics"-->
+    <!--android:icon="@drawable/ic_assessment_black_24dp"-->
+    <!--android:title="@string/statistics"-->
+    <!--android:visible="false" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_prices"-->
+    <!--android:icon="@drawable/ic_monetization_on_black_24dp"-->
+    <!--android:title="@string/prices"-->
+    <!--android:visible="false" />-->
+    <!--</group>-->
+
+    <!--Group Account-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_group_account"-->
+    <!--android:title="Account"-->
+    <!--android:icon="@drawable/ic_expand_more_green_24dp" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_profile"-->
+    <!--android:icon="@drawable/ic_account_circle_black_24dp"-->
+    <!--android:title="@string/profile"-->
+    <!--android:visible="false" />-->
+    <!--</group>-->
+
+    <!--Group Communicate-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_group_communicate"-->
+    <!--android:title="Communicate"-->
+    <!--android:icon="@drawable/ic_expand_more_green_24dp" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_message"-->
+    <!--android:icon="@drawable/ic_email_black_24dp"-->
+    <!--android:title="@string/message"-->
+    <!--android:visible="false" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_chat"-->
+    <!--android:icon="@drawable/ic_textsms_black_24dp"-->
+    <!--android:title="@string/chat"-->
+    <!--android:visible="false" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_share_black_24dp"-->
+    <!--android:title="@string/share"-->
+    <!--android:visible="false" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_send_black_24dp"-->
+    <!--android:title="@string/send"-->
+    <!--android:visible="false" />-->
+    <!--</group>-->
+
+    <!--Group System-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_group_system"-->
+    <!--android:title="System"-->
+    <!--android:icon="@drawable/ic_expand_more_green_24dp" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_about"-->
+    <!--android:icon="@drawable/ic_group_black_24dp"-->
+    <!--android:title="@string/about"-->
+    <!--android:visible="false" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_logout"-->
+    <!--android:icon="@drawable/ic_power_settings_new_black_24dp"-->
+    <!--android:title="@string/logout"-->
+    <!--android:visible="false" />-->
+    <!--</group>-->
+
+</menu>

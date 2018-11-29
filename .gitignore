@@ -5,6 +5,7 @@
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
+/.idea/assetWizardSettings.xml
 .gradle
 # Local configuration file (sdk path, etc)
 /local.properties
